@@ -1,0 +1,55 @@
+@page
+@model JobleGlobal.Pages.Customers.DetailsModel
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Customer</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Customer.Name)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Customer.Name)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Customer.ContactNumber1)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Customer.ContactNumber1)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Customer.ContactNumber2)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Customer.ContactNumber2)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Customer.Email1)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Customer.Email1)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Customer.Email2)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Customer.Email2)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Customer.PrimaryContactPersonGuid)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Customer.PrimaryContactPersonGuid)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-page="./Edit" asp-route-id="@Model.Customer.Id">Edit</a> |
+    <a asp-page="./Index">Back to List</a>
+</div>
